@@ -1,0 +1,175 @@
+<html>
+<head>
+	<title>HTML 5 Challenge - Dmitriy Pilipenko</title>
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<link rel="stylesheet" href="accordion.css" type="text/css" />
+	<link rel="stylesheet" href="articles.css" type="text/css" />
+	<script src="accordion.js"></script>
+</head>
+<body onload="accordionInit();doClose('myAccor_body2');doClose('myAccor_body3');doClose('myAccor_body4');" >
+
+<div id="container">
+
+	<!-- START HEADER -->
+	<div id="headerwrapper">	
+		<div id="header">
+		
+			<span class="floatRight">
+
+				<span id="headerLinks">
+					<a href="termandconditions.html">Terms and Conditions</a> | 
+					<a href="privacypolicy.html">Privacy Policy</a> 
+				</span>
+				<span id="headerSearch">
+					<input type="text" value="Search..." class="searchbox"/>
+				</span>
+			</span>
+		</div>
+	</div>
+	<!-- END HEADER -->
+	
+	
+	
+	<div id="bodywrapper">
+	
+	<!-- START NAVIGATION BAR -->
+		<div id="navbar">
+			<span class="navEntry activeEntry"><a href="index.html">home</a></span>
+			<span class="navEntry"><a href="aboutus.html">about us</a></span>
+			<span class="navEntry"><a href="services.html">services</a></span>
+			<span class="navEntry"><a href="contactus.html">contact us</a></span>
+		</div>
+	<!-- END NAVIGATION BAR -->
+		
+		
+		
+		<div id="body">
+		
+			<div id="bodyLeft" class="floatLeft">
+			
+				<h1>Page Title</h1>
+				<h3>Some Kind of Subheading About Whatever This Is</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui diam, tempor nec tempor id, sollicitudin facilisis ligula. Sed accumsan luctus sem, non malesuada nisi porttitor at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi tristique, nunc a mollis iaculis, lorem quam mollis nulla, a pretium augue leo nec arcu. Curabitur sodales pharetra sem, id volutpat nisi semper vitae. Proin erat diam, laoreet vel pretium vitae, mattis vel ipsum. Morbi euismod suscipit dui. Maecenas gravida ultrices magna sed feugiat.</p>
+			
+
+			
+<!-- START ACCORDION -->
+				<div id="myAccor_accordion">
+		
+					<!-- ACCORDION PANE 1 -->
+					<div class="myAccor_header">
+						<p>Some Section Title 1</p>
+						<img src="assets/img_handle_close.png" onclick="buttonClick(this, 'myAccor_body1');" />
+					</div>
+					<div class="myAccor_body" id="myAccor_body1">
+						<div class="myAccor_contents">
+							<img src="assets/img_paintbucket.png" class="myAccor_floatRight"/>
+							<p>
+								Donec massa enim, tempor id fringilla sit amet, ultrices in ante. In sagittis lectus eu risus dignissim bibendum. Mauris in pretium enim. In hac habitasse platea dictumst. Suspendisse lobortis, lectus vel semper imperdiet, est risus faucibus purus, et ultrices orci metus non arcu. Aliquam iaculis congue volutpat. Sed ac massa dui. Mauris dapibus mollis sem vel adipiscing. Aliquam quam eros, pulvinar eu dapibus non, tempor vitae orci. Cras suscipit viverra felis et mattis.  
+							</p>
+							<div class="myAccor_clear"></div>
+						</div>
+					</div>
+					
+			
+					<!-- ACCORDION PANE 2 -->
+					<div class="myAccor_header">
+						<p>Some Section Title 2</p>
+						<img src="assets/img_handle_open.png" onclick="buttonClick(this, 'myAccor_body2');" />
+					</div>
+					<div class="myAccor_body" id="myAccor_body2">
+						<div class="myAccor_contents">
+							<img src="assets/img_paintbucket.png" class="myAccor_floatRight"/>
+							<p>
+								Donec massa enim, tempor id fringilla sit amet, ultrices in ante. In sagittis lectus eu risus dignissim bibendum. Mauris in pretium enim. In hac habitasse platea dictumst. Suspendisse lobortis, lectus vel semper imperdiet, est risus faucibus purus, et ultrices orci metus non arcu. Aliquam iaculis congue volutpat. Sed ac massa dui. Mauris dapibus mollis sem vel adipiscing. Aliquam quam eros, pulvinar eu dapibus non, tempor vitae orci. Cras suscipit viverra felis et mattis.  
+							</p>
+							<div class="myAccor_clear"></div>
+						</div>
+					</div>
+			
+			
+					<!-- ACCORDION PANE 3 -->
+					<div class="myAccor_header">
+						<p>Some Section Title 3</p>
+						<img src="assets/img_handle_open.png" onclick="buttonClick(this, 'myAccor_body3');" />
+					</div>
+					<div class="myAccor_body" id="myAccor_body3">
+						<div class="myAccor_contents">
+							<img src="assets/img_paintbucket.png" class="myAccor_floatRight"/>
+							<p>
+								Donec massa enim, tempor id fringilla sit amet, ultrices in ante. In sagittis lectus eu risus dignissim bibendum. Mauris in pretium enim. In hac habitasse platea dictumst. Suspendisse lobortis, lectus vel semper imperdiet, est risus faucibus purus, et ultrices orci metus non arcu. Aliquam iaculis congue volutpat. Sed ac massa dui. Mauris dapibus mollis sem vel adipiscing. Aliquam quam eros, pulvinar eu dapibus non, tempor vitae orci. Cras suscipit viverra felis et mattis.  
+							</p>
+							<div class="myAccor_clear"></div>
+						</div>
+					</div>
+			
+			
+					<!-- ACCORDION PANE 4 -->
+					<div class="myAccor_header">
+						<p>Some Section Title 4</p>
+						<img src="assets/img_handle_open.png" onclick="buttonClick(this, 'myAccor_body4');" />
+					</div>
+					<div class="myAccor_body" id="myAccor_body4">
+						<div class="myAccor_contents">
+							<img src="assets/img_paintbucket.png" class="myAccor_floatRight"/>
+							<p>
+								Donec massa enim, tempor id fringilla sit amet, ultrices in ante. In sagittis lectus eu risus dignissim bibendum. Mauris in pretium enim. In hac habitasse platea dictumst. Suspendisse lobortis, lectus vel semper imperdiet, est risus faucibus purus, et ultrices orci metus non arcu. Aliquam iaculis congue volutpat. Sed ac massa dui. Mauris dapibus mollis sem vel adipiscing. Aliquam quam eros, pulvinar eu dapibus non, tempor vitae orci. Cras suscipit viverra felis et mattis.  
+							</p>
+							<div class="myAccor_clear"></div>
+						</div>
+					</div>
+				
+				</div>
+<!-- END ACCORDION -->
+
+
+
+			</div>
+
+			<div id="bodyRight" class="floatRight">
+			
+						
+<!-- START ARTICLES -->
+<div class="articles">
+	<div class="article new">
+		<h1>This is a Title</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et orci nec diam lobortis pulvinar. Nunc rutrum justo ac nisi tincidunt dapibus. Integer eget felis purus. In a nisi sed eros suscipit hendrerit vel id ipsum. Suspendisse potenti. Ut urna dui, dictum eu auctor elementum, condimentum ac magna. Mauris facilisis ultricies sem vitae porta.
+		</p>
+	</div>
+	<hr />
+	<div class="article">
+		<h1>This is a Title</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et orci nec diam lobortis pulvinar. Nunc rutrum justo ac nisi tincidunt dapibus. Integer eget felis purus. In a nisi sed eros suscipit hendrerit vel id ipsum. Suspendisse potenti. Ut urna dui, dictum eu auctor elementum, condimentum ac magna. Mauris facilisis ultricies sem vitae porta.
+		</p>
+	</div>
+</div>
+<!-- END ARTICLES -->
+				
+			</div>
+			
+			
+			
+		</div>
+	</div>
+
+	<div id="footerwrapper">
+		<div id="footer">
+			<span class="floatLeft">
+				<a href="index.html">&copy;2012 website, inc.</a>
+			</span>
+			<span class="floatRight">
+				<a href="index.html">home</a> | 
+				<a href="aboutus.html">about us</a> | 
+				<a href="services.html">services</a> | 
+				<a href="termsnconditions.html">terms and conditions</a> | 
+				<a href="privacypolicy.html">privacy policy</a>
+			</span>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
