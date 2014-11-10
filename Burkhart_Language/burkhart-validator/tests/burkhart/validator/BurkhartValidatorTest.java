@@ -37,11 +37,11 @@ public class BurkhartValidatorTest {
 	}
 	
 	/**
-	 * Test One Input Argument
+	 * Test for valid File
 	 */
 	@Test
 	public void testInputArgument() {
-		BurkhartValidator.main(new String[] {"input.txt"});
+		BurkhartValidator.main(new String[] {"LoremIpsum.txt"});
 		assertEquals('1', outContent.toByteArray()[0]);
 	}
 	
