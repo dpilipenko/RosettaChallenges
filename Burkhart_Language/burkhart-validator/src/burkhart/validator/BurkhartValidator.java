@@ -10,11 +10,22 @@ package burkhart.validator;
 public class BurkhartValidator {
 
 	/**
+	 * Expectation is that at least one argument is included. 
+	 * 1 if true, 0 if false
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// Initial project setup. 
-		System.out.println("Validator.");
+		int argumentCount = args.length;
+		switch (argumentCount) {
+		case 0:
+			// no arguments included.
+			System.out.write(0);
+			break;
+		default:
+			// at least one argument included
+			System.out.write(1);
+			break;
+		}
 	}
 
 }
