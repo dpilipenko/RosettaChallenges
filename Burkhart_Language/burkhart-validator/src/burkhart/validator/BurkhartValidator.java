@@ -34,12 +34,11 @@ public class BurkhartValidator {
 		}
 	}
 	
-	private static boolean doValidate(String input) {
-		File file = new File(BurkhartValidator.class.getClassLoader().getResource(input).getPath());
-		if (file.exists() && !file.isDirectory()) {
-			return true;
-		} else {
+	public static boolean doValidate(String input) {
+		if (input == null || input.isEmpty()) {
 			return false;
+		} else {
+			return true;
 		}
 	}
 

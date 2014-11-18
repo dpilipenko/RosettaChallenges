@@ -10,12 +10,14 @@ import java.io.PrintStream;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
  * @author Dmitriy Pilipenko
  *
  */
+@Ignore
 public class BurkhartValidatorTest {
 
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
